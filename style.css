@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imagestatic {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    display: block;
+}
+
+.imagecropped {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    object-fit: cover;
+    margin: 0;
+}
+
+.videostatic {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+}
+
+.videocropped {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+    justify-content: center;
+    object-fit: cover;
+    margin: 0;
+}
+
+.model {
+    width: 100vw;
+    height: 100vh;
+}
