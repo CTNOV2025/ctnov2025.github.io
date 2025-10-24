@@ -47,7 +47,7 @@ body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    pointer-events: none;
-    
+    pointer-events: none !important;
+    overscroll-behavior: none !important;
 }
 

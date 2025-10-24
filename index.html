@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
 </head>
 
 
 
-
-<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 <script>
     function toggleMute() {
         var myAudio = document.getElementById('thesmiths');
@@ -26,27 +25,27 @@
 
 <body>
 
-    <audio autoplay muted loop id="thesmiths">
-        <source src="Content/thesmiths.mp3" type="audio/mp3" />
-    </audio>
-    <a href="javascript:void(0);" onclick="toggleMute()">Mute/Unmute</a>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 
-    <img class="imagecropped" src="Content/testpic1.jpg">
+    <audio autoplay muted loop id="thesmiths" src="Content/thesmiths.mp3" type="audio/mp3">
 
-    <img class="imagestatic" src="Content/testpictext1.png">
+        <a href="javascript:void(0);" onclick="toggleMute()">Mute/Unmute</a>
 
-    <video class="videocropped" autoplay muted loop playsinline type="video/mp4" src="Content/testvideo1.mp4"></video>
+        <img class="imagecropped" src="Content/testpic1.jpg">
 
-    <img class="imagecropped" src="Content/testpic1.jpg">
+        <img class="imagestatic" src="Content/testpictext1.png">
 
-    <img class="imagestatic" src="Content/testvideogif.gif">
+        <video class="videocropped" autoplay muted loop playsinline type="video/mp4"
+            src="Content/testvideo1.mp4"></video>
 
-    <model-viewer ar auto-rotate disable-zoom class="model"
-        src="https://modelviewer.dev/shared-assets/models/Astronaut.glb"
-        ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz">
-    </model-viewer>
+        <img class="imagecropped" src="Content/testpic1.jpg">
 
-    <img class="imagestatic" src="Content/testvideogif.gif">
+        <img class="imagestatic" src="Content/testvideogif.gif">
+
+        <model-viewer camera-controls interaction-policy="allow-rotate" src="../../shared-assets/models/Astronaut.glb"
+            alt="A 3D model of an astronaut"></model-viewer>
+
+        <img class="imagestatic" src="Content/testvideogif.gif">
 
 
 
