@@ -11,8 +11,10 @@
 
 </head>
 
+<!-- SCRIPT VOOR 3D VIEWER -->
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 
-
+<!-- SCRIPT VOOR AUDIO UNMUTE -->
 <script>
     function toggleMute() {
         var myAudio = document.getElementById('thesmiths');
@@ -25,26 +27,23 @@
 
 <body>
 
-    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
+    <audio autoplay muted loop id="thesmiths" src="Content/thesmiths.mp3" type="audio/mp3"></audio>
 
-    <audio autoplay muted loop id="thesmiths" src="Content/thesmiths.mp3" type="audio/mp3">
+    <a href="javascript:void(0);" onclick="toggleMute()">Mute/Unmute</a>
 
-        <a href="javascript:void(0);" onclick="toggleMute()">Mute/Unmute</a>
+    <img class="imagecropped" src="Content/testpic1.jpg">
 
-        <img class="imagecropped" src="Content/testpic1.jpg">
+    <img class="imagestatic" src="Content/testpictext1.png">
 
-        <img class="imagestatic" src="Content/testpictext1.png">
+    <video class="videocropped" autoplay muted loop playsinline type="video/mp4" src="Content/testvideo1.mp4"></video>
 
-        <video class="videocropped" autoplay muted loop playsinline type="video/mp4"
-            src="Content/testvideo1.mp4"></video>
+    <img class="imagecropped" src="Content/testpic1.jpg">
 
-        <img class="imagecropped" src="Content/testpic1.jpg">
+    <img class="imagestatic" src="Content/testvideogif.gif">
 
-        <img class="imagestatic" src="Content/testvideogif.gif">
+    <model-viewer camera-controls disable-zoom src="../../shared-assets/models/NeilArmstrong.glb"></model-viewer>
 
-        <model-viewer camera-controls disable-zoom src="Content/the_utah_teapot.glb"></model-viewer>
-
-        <img class="imagestatic" src="Content/testvideogif.gif">
+    <img class="imagestatic" src="Content/testvideogif.gif">
 
 
 
