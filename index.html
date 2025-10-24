@@ -11,10 +11,10 @@
 
 </head>
 
-<!-- SCRIPT VOOR 3D VIEWER -->
+<!-- SCRIPT FOR 3D VIEWER -->
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 
-<!-- SCRIPT VOOR AUDIO UNMUTE -->
+<!-- SCRIPT FOR AUDIO UNMUTE -->
 <script>
     function toggleMute() {
         var myAudio = document.getElementById('thesmiths');
@@ -41,7 +41,8 @@
 
     <img class="imagestatic" src="Content/testvideogif.gif">
 
-    <model-viewer camera-controls disable-zoom src="../../shared-assets/models/NeilArmstrong.glb"></model-viewer>
+    <!-- DISABLE ZOOM DOES NOT WORK LOCALLY. WHEN ONLINE IT DOES WORK-->
+    <model-viewer style="display: block;" camera-controls disable-zoom src="Content/the_utah_teapot.glb"></model-viewer>
 
     <img class="imagestatic" src="Content/testvideogif.gif">
 
