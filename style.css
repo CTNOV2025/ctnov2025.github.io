@@ -50,10 +50,9 @@ body {
 }
 
 .model {
-    width: calc(100vw - 180px);
+    width: calc(100vw - 90px);
     height: calc(100vh - 90px);
     position: relative;
-    object-fit: cover;
     display: block;
     margin-left: 0;
     margin-right: 0;
