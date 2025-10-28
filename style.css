@@ -13,10 +13,11 @@ body {
     display: block;
     position: absolute;
     width: auto;
-    height: 10%;
+    height: 8%;
     object-fit: cover;
     mix-blend-mode: difference;
     cursor: pointer;
+    margin-right: 3vh;
 
 }
 
@@ -78,6 +79,8 @@ hr {
     margin: 0;
     display: flex;
     isolation: isolate;
+    justify-content: end;
+    align-items: end;
 }
 
 @media screen and (max-aspect-ratio: 1/1) {
@@ -88,10 +91,26 @@ hr {
         margin-bottom: 2vh;
     }
 
-    .unmute {
-        margin: 2vh;
+    body {
+        margin-top: -2vh;
     }
 
+    .unmute {
+        margin: 2vh;
+        margin-right: 2.5vh;
+    }
+
+    .imagecropped {
+        height: 80vh;
+    }
+
+    .videocropped {
+        height: 80vh;
+    }
+
+    .model {
+        height: 80vh;
+    }
 
 
 }
