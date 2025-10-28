@@ -7,18 +7,18 @@
     <title>Document title</title>
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
 </head>
 
 <!-- SCRIPT FOR 3D VIEWER -->
+
 <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js"></script>
 
 <!-- SCRIPT FOR AUDIO UNMUTE -->
+
 <script>
     function toggleMute() {
-        var myAudio = document.getElementById('thesmiths');
-        myAudio.muted = !myAudio.muted;
+        var myVideo = document.getElementById("videocropped");
+        myVideo.muted = !myVideo.muted;
     }
 </script>
 
@@ -26,24 +26,37 @@
 
 <body>
 
-    <audio autoplay muted loop id="thesmiths" src="Content/thesmiths.mp3" type="audio/mp3"></audio>
-
+    <!--MUTE BUTTON-->
+    
     <a href="javascript:void(0);" onclick="toggleMute()" class="unmute">Mute/Unmute</a>
 
-    <img class="imagecropped" src="Content/testpic1.jpg">
+    <!--FILES-->
 
-    <img class="imagestatic" src="Content/testpictext1.png">
+    <img src="Content/testpic1.jpg" class="imagecropped">
 
-    <video class="videocropped" autoplay muted loop playsinline type="video/mp4" src="Content/testvideo1.mp4"></video>
+    <hr>
 
-    <img class="imagecropped" src="Content/testpic1.jpg">
+    <img src="Content/testpictext1.png" class="imagestatic">
 
-    <img class="imagestatic" src="Content/testvideogif.gif">
+    <hr>
 
-    <!-- CUSTOM MODELS AND DISABLE-ZOOM DO NOT WORK LOCALLY. WHEN ONLINE IT DOES WORK-->
-    <model-viewer class="model" ar disable-zoom auto-rotate rotation-per-second="5deg" src="Content/the_utah_teapot.glb"></model-viewer>
+    <video src="Content/testvideo2.mp4" class="videocropped" id="videocropped" autoplay muted loop playsinline controls type="video/mp4"></video>
 
-    <img class="imagestatic" src="Content/testvideogif.gif">
+    <hr>
+    
+    <img src="Content/testpic1.jpg" class="imagecropped">
+
+    <hr>
+    
+    <img src="Content/testvideogif.gif" class="imagestatic">
+
+    <hr>
+
+    <model-viewer src="Content/the_utah_teapot.glb" class="model" ar disable-zoom auto-rotate rotation-per-second="5deg"></model-viewer>
+
+    <hr>
+
+    <img src="Content/testvideogif.gif" class="imagestatic">
 
 
 
