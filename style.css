@@ -9,9 +9,21 @@ body {
 }
 
 .unmute {
-    position: fixed;
-    z-index: 1;
+    z-index: 10 !important;
     display: block;
+    position:absolute;
+    width: auto;
+    height: 70%;
+    object-fit: cover;
+    mix-blend-mode: difference;
+    opacity: 0;
+    cursor: pointer;
+
+}
+
+.unmute:hover {
+    opacity: 100;
+
 }
 
 .imagestatic {
@@ -66,4 +78,12 @@ hr {
     margin-bottom: 45px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.cont {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    isolation: isolate;
 }

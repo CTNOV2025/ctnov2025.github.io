@@ -15,20 +15,9 @@
 
 <!-- SCRIPT FOR AUDIO UNMUTE -->
 
-<script>
-    function toggleMute() {
-        var myVideo = document.getElementById("videocropped");
-        myVideo.muted = !myVideo.muted;
-    }
-</script>
-
-
+<script src="togglemute.js"></script>
 
 <body>
-
-    <!--MUTE BUTTON-->
-    
-    <a href="javascript:void(0);" onclick="toggleMute()" class="unmute">Mute/Unmute</a>
 
     <!--FILES-->
 
@@ -40,23 +29,34 @@
 
     <hr>
 
-    <video src="Content/testvideo2.mp4" class="videocropped" id="videocropped" autoplay muted loop playsinline controls type="video/mp4"></video>
+    <div class="cont"> <img onclick="toggleMute(this)" data-target="video2" class="unmute" src="Content/unmute.svg">
+        <video id="video2" src="Content/testvideo2.mp4" class="videocropped" autoplay muted loop playsinline
+            type="video/mp4"></video>
+    </div>
 
     <hr>
-    
+
     <img src="Content/testpic1.jpg" class="imagecropped">
 
     <hr>
-    
+
     <img src="Content/testvideogif.gif" class="imagestatic">
 
     <hr>
 
-    <model-viewer src="Content/the_utah_teapot.glb" class="model" ar disable-zoom auto-rotate rotation-per-second="5deg"></model-viewer>
+    <model-viewer src="Content/the_utah_teapot.glb" class="model" ar disable-zoom auto-rotate
+        rotation-per-second="5deg"></model-viewer>
 
     <hr>
 
     <img src="Content/testvideogif.gif" class="imagestatic">
+
+    <hr>
+
+    <div class="cont"> <img onclick="toggleMute(this)" data-target="video3" class="unmute" src="Content/unmute.svg">
+        <video id="video3" src="Content/testvideo3.mp4" class="videocropped" autoplay muted loop playsinline
+            type="video/mp4"></video>
+    </div>
 
 
 
